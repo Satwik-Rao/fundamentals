@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: lightcyan;
+  color: crimson;
+}
+
+.booklist {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 5rem auto;
+  display: grid;
+  gap: 2rem;
+}
+
+.book {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .booklist {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.book img {
+  width: 80%;
+  object-fit: cover;
+}
+
+.book h2 {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.index {
+  background-color: #c35600;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  font-size: 1rem;
+  padding: 0.75rem;
+}
+
+.bestsellers {
+  text-align: center;
+  color: rgb(5, 0, 4);
+  margin-top: 4rem;
+}
